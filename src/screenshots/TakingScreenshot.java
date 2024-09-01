@@ -18,5 +18,4 @@ public class TakingScreenshot {
 		FileUtils.copyFile(screenshotFile, new File("C:/selenium/screenshots/"+timeStamp+".png"));
 		Thread.sleep(2000);driver.quit();
 	}
-
 }
