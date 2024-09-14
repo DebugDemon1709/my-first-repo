@@ -40,7 +40,7 @@ public class EndToEnd {
 		boolean match = cartProducts.stream().anyMatch(cartProduct->cartProduct.getText().equalsIgnoreCase(productName));//matching all the elements in the cart page with productName
 		Assert.assertTrue(match);//if item is present, then match is true, then assertion is true
 	    WebElement checkout = driver.findElement(By.cssSelector(".totalRow button"));
-	    checkout.sendKeys(Keys.PAGE_DOWN);checkout.click();  //scroll to view checkOut
+	    checkout.sendKeys(Keys.PAGE_DOWN);checkout.click();  //scroll to view checkOut button and then click on it
 	    action.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")), "india").perform(); //lecture 156 
 	    wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
 	    driver.findElement(By.xpath("(//button[@type='button'])[2]")).click();
@@ -50,14 +50,3 @@ public class EndToEnd {
 	    driver.quit();		
 	}
 }
-
-
-
-
-
-
-
-
-
-
-

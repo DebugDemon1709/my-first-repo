@@ -48,7 +48,6 @@ public class Streams_Example {
 	}
 }
 /*
- * In lambda expressions (s->any action) left side s is items present in list or
- * stream right side what action you perform on the list/stream present in the
- * left side
+ * In lambda expressions (s->any action) left side 's' is items present in list or stream
+ * and right side what action you perform on the list/stream present in the left side
  */
