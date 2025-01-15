@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class GetLocationOfWebElement {
 
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "C:/selenium/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver-win64\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://demoapp.skillrary.com/login.php?type=login");
 		driver.manage().window().maximize();
@@ -17,5 +17,4 @@ public class GetLocationOfWebElement {
 		System.out.println("X-axis is "+startX +"\nY-axis is "+ startY);
 		driver.quit();
 	}
-
 }

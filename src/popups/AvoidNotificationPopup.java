@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class AvoidNotificationPopup {           
 	@SuppressWarnings("deprecation") // this is just a warning from implicitlyWait
 	public static void main(String[] args) throws InterruptedException, AWTException   {
-		System.setProperty("webdriver.chrome.driver", "C:/selenium/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver-win64\\chromedriver.exe");
 		ChromeOptions options = new  ChromeOptions();
 		options.addArguments("--disable-notifications");   //DISABLE THE POPUP
 		options.addArguments("incognito");     // OPEN THE WINDOW IN INCOGNITO MODE
